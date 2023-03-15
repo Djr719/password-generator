@@ -62,5 +62,6 @@ https://sentry.io/answers/difference-between-let-and-var-in-javascript/#:~:text=
 https://www.w3schools.com/jsref/met_win_prompt.asp
 https://www.w3schools.com/jsref/met_win_confirm.asp
 
-Deployed website: 
+Deployed website: https://djr719.github.io/password-generator/
+
 
