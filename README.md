@@ -42,7 +42,9 @@ Repository follows best practices for class/id naming conventions, indentation, 
 Repository contains multiple descriptive commit messages.
 Repository contains quality readme file with description, screenshot, and link to deployed application.
 
-Assets/Deployed website.png 
+![Deployed website.png](https://github.com/Djr719/password-generator/blob/a854133918a5cf37338fe5951f6c2541d713a832/Assets/Deployed%20website.png)
+
+Deployed website: https://djr719.github.io/password-generator/
 
 References:
 https://www.w3schools.com/js/js_functions.asp
@@ -64,6 +66,6 @@ https://sentry.io/answers/difference-between-let-and-var-in-javascript/#:~:text=
 https://www.w3schools.com/jsref/met_win_prompt.asp
 https://www.w3schools.com/jsref/met_win_confirm.asp
 
-Deployed website: https://djr719.github.io/password-generator/
+
 
 
