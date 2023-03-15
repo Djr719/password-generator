@@ -18,7 +18,7 @@ WHEN all prompts are answered
 THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
-```
+
 The following criteria also needed to be met:
 
 Deployment:
@@ -69,3 +69,6 @@ https://www.w3schools.com/jsref/met_win_confirm.asp
 
 
 
+
+
+[def]: https://github.com/Djr719/password-generator/blob/a854133918a5cf37338fe5951f6c2541d713a832/Assets/Deployed%20website.png
