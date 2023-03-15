@@ -7,15 +7,20 @@ var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'
 var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var special = ['@', '%', '+', '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '-', '_', '.'
 ]; 
-var length = (x>==8)+(x<==128)
-var x = 8
+var length = (x>==8)+(x<==128);
+var x = 8;
 
-numberOfCharacters = prompt("Please enter your password length. Password must be between 8 and 128 characters.");
+length = prompt("Please enter your password length. Password must be between 8 and 128 characters.");
   if (numberOfCharacters < 8 || numberOfCharacters > 128) {
-    return "Error. Password must be between 8 and 128 characters";
-  } else if (NaN(Error);(numberOfCharacters)) {
+    errorObj.message("Error- Password must be between 8 and 128 characters") };
+ 
+ upperCase = prompt("Would you like to add upperCase letters?");
+ if (y.upperCase)
+
+ 
+    
   
-}
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
