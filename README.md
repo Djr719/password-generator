@@ -63,7 +63,7 @@ https://www.w3schools.com/jsref/met_win_prompt.asp
 https://www.w3schools.com/jsref/met_win_confirm.asp
 
 Deployed website: https://djr719.github.io/password-generator/
-![Deployed website](https://user-images.githubusercontent.com/125601940/225455964-5fee05e8-8daf-4029-b952-0fc27d47a089.png)
 
 
+![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/drugg/bootcamp/Challenge%203/password-generator/Deployed%20website.png?version%3D1678918726718)
 
