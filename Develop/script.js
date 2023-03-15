@@ -6,60 +6,59 @@ function generatePassword() {
   var possibleChoices = [];
 
   // get input and validate
-  characters = prompt("How many characters do you want in your password? Choose between 8-128 characters.");
+  characters = prompt("How many characters do you want in your password? Choose between 8 to 128 characters.");
   if (characters < 8 || characters > 128) {
-    return "Please choose a valid number of characters.";
+    return alert ("Please choose a valid number between 8 and 128.");
   } else if (isNaN(characters)) {
-    characters = prompt("Please enter a valid number.");
+    return alert("You must enter a number.");
   }
   else {
     alert("Your password will be " + characters + " characters long.");
     
   }
 
-  yesLowercase = confirm("Do you want lowercase characters?");
-  if (yesLowercase) {
-    var turnToLowercase = alert("Your password will have lowercase characters.");
+  yesUpperCase = confirm("Do you want uppercase letters?");
+  if (yesUpperCase) {
+    var turnToupperCase = alert("Uppercase letters have been selected.");
   }
   else {
-    alert("Your password will NOT have lowercase characters.");
+    alert("Uppercase letters have not been selected.");
   }
 
-  yesupperCase = confirm("Do you want uppercase characters?");
-  if (yesupperCase) {
-    alert("Your password will have uppercase characters.");
+  yesLowerCase = confirm("Do you want lowercase letters?");
+  if (yesLowerCase) {
+    alert("Lowercase letters have been selected.");
   }
   else {
-    alert("Your password will NOT have uppercase characters.");
+    alert("Lowercase letters have not been selected.");
   }
 
   yesNumbers = confirm("Do you want to use numbers?");
   if (yesNumbers) {
-    alert("Your password will have numbers.");
+    alert("Numbers have been selected.");
   }
   else {
-    alert("Your password will NOT have numbers.");
+    alert("Numbers have not been selected.");
   }
 
   yesSpecial = confirm("Do you want special characters?");
   if (yesSpecial) {
-    alert("Your password will have special characters.");
+    alert("Special characters have been selected.");
   }
   else {
-    alert("Your password will NOT have special characters.");
+    alert("Special characters have not been selected.");
   }
 
-  if (yesLowercase === false && yesupperCase === false && yesNumbers === false && yesSpecial === false) {
-    return "Please select at least one character type.";
+  if (yesLowerCase === false && yesUpperCase === false && yesNumbers === false && yesSpecial === false) {
+    return alert("One character type must be selected to generate password.");
   };
 
   // group selected characters
-  if (yesLowercase) {
-    possibleChoices = possibleChoices.concat(lowerCase);
-  }
-  if (yesupperCase) {
+  if (yesUpperCase) {
     possibleChoices = possibleChoices.concat(upperCase);
   }
+  if (yesLowerCase) {
+    possibleChoices = possibleChoices.concat(lowerCase);
   if (yesNumbers) {
     possibleChoices = possibleChoices.concat(number);
   }
@@ -71,13 +70,12 @@ function generatePassword() {
   let finalPassword = ""
   for (let i = 0; i < characters; i++) {
     let rng =[Math.floor(Math.random() * possibleChoices.length)];
-    // or finalPassword += possibleChoices[rng];
     finalPassword = finalPassword + possibleChoices[rng];
   }
   return finalPassword;
-};
+};}
 
-// Get references to the #generate element
+// Assignment code
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
