@@ -63,5 +63,6 @@ https://www.w3schools.com/jsref/met_win_prompt.asp
 https://www.w3schools.com/jsref/met_win_confirm.asp
 
 Deployed website: https://djr719.github.io/password-generator/
-(https://github.com/Djr719/password-generator/blob/6fe163fb3121ce9f549be708a7b4152bbece8f89/index.html)
+![image](https://user-images.githubusercontent.com/125601940/225455705-c3cd8e9a-bb7e-4f22-b656-4c387de6d033.png)
+
 
