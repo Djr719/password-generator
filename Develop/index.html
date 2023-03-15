@@ -8,16 +8,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="overlay" id="overlay" hidden>
-      <div class="confirm-box">
-        <div onclick="closeConfirmBox()" class="close">&#10006;</div>
-        <h2>Confirmation</h2>
-        <p>Are you sure to execute this action?</p>
+    <div onclick="closeConfirmBox()" class="close">&#10006;</div>
         <button onclick="isConfirm(true)">Yes</button>
-        <button onclick="isConfirm(false)">No</button>
-      </div>
-    </div>
-    <button onclick="showConfirmBox()">Delete</button>
+        <button onclick="isConfirm(false)">No</button>>
     <div class="wrapper">
       <header>
         <h1>Password Generator</h1>

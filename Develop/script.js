@@ -14,23 +14,41 @@ length = prompt("Please enter your password length. Password must be between 8 a
   if (numberOfCharacters < 8 || numberOfCharacters > 128) {
     errorObj.message("Error- Password must be between 8 and 128 characters") };
  
- upperCase = prompt("Would you like to add upperCase letters?");
+ hasupperCase = prompt("Would you like to add upperCase letters?");
  if (upperCase) {var upperCase = alert("Password will have uppercase letters.")};
  
- lowerCase = prompt("Would you like lowercase letters?");
+ haslowerCase = prompt("Would you like lowercase letters?");
  if (lowerCase) {var lowerCase = alert("Password will have lowercase letters.")};
 
- numbers = prompt("Would you like to include numbers?");
+ hasnumbers = prompt("Would you like to include numbers?");
  if (numbers) {var numbers = alert("Password will have numbers.")};
 
- special = prompt("Would you like to add special characters?");
+ hasspecial = prompt("Would you like to add special characters?");
  if (special) {var special = alert("Password will have special characters.")};
 
- if (lowerCase === false && upperCase === false && numbers === false && special === false) {
+ if (haslowerCase === false && hasupperCase === false && hasnumbers === false && hasspecial === false) {
   errorObj.message("Error- password must have one character type.");
 };
+if (haslowerCase) {
+  possibleCharacters = possibleCharacters.concat(lowerCase);
+}
+if (hasupperCase) {
+  possibleCharacters = possibleCharacters.concat(upperCase);
+}
+if (hasnumbers) {
+  possibleCharacters = possibleCharacters.concat(numbers);
+}
+if (hasspecial) {
+  possibleCharacters = possibleCharacters.concat(special);
+}
+let finalPassword = ""
+  for (let i = 0; i < length; i++) {
+    let rng =[Math.floor(Math.random() * possibleCharacters.length)];
 
- 
+    finalPassword = finalPassword + possibleCharacters[rng];
+  }
+  return {finalPassword;
+};
     
   
 
