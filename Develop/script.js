@@ -5,12 +5,14 @@ function generatePassword() {
   var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
   var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   var special = ['@', '%', '+', '\\', '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '-', '_', '.'];
+  // this will allow all choices to come together when using concat 
   var possibleChoices = [];
 
-  // 
+  // Selection criteria using prompt, confirm, and 'if, else' statement. Added alert and return to notify user of  
+  //selection and to prevent them from continuing with password selection if criteria is not met.
   characters = prompt("How many characters do you want in your password? Choose between 8 to 128 characters.");
   if (characters < 8 || characters > 128) {
-    alert ("Please choose a valid number between 8 and 128.");
+    alert ("Choose a valid number between 8 and 128.");
     return "Invalid"
   } else if (isNaN(characters)) {
     alert("You must enter a number.");
@@ -58,7 +60,7 @@ function generatePassword() {
     return "Error"
   };
 
-  // Used "if" functon and "concat"
+  // Used "if" statement for conditions and "concat" to merge arrays based on selection
   if (yesUpperCase) {
     possibleChoices = possibleChoices.concat(upperCase);
   }
@@ -71,7 +73,7 @@ function generatePassword() {
     possibleChoices = possibleChoices.concat(special);
   }
 
-  // Loop to generate password based on criteria
+  // Loop to generate password based on selection
   let finalPassword = ""
   for (let i = 0; i < characters; i++) {
     let rng =[Math.floor(Math.random() * possibleChoices.length)];
