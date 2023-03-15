@@ -67,3 +67,4 @@ Deployed website: https://djr719.github.io/password-generator/
 
 ![Alt text](https://file%2B.vscode-resource.vscode-cdn.net/c%3A/Users/drugg/bootcamp/Challenge%203/password-generator/Deployed%20website.png?version%3D1678918726718)
 
+![Alt text](https://github.com/Djr719/password-generator/blob/main/Deployed%20website.png)
