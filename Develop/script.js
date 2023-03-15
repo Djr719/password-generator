@@ -1,16 +1,20 @@
+// added function to generate password
 function generatePassword() {
+  // added array of characters for the password to choose from
   var number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
   var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   var special = ['@', '%', '+', '\\', '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '-', '_', '.'];
   var possibleChoices = [];
 
-  // get input and validate
+  // 
   characters = prompt("How many characters do you want in your password? Choose between 8 to 128 characters.");
   if (characters < 8 || characters > 128) {
-    return alert ("Please choose a valid number between 8 and 128.");
+    alert ("Please choose a valid number between 8 and 128.");
+    return "Invalid"
   } else if (isNaN(characters)) {
-    return alert("You must enter a number.");
+    alert("You must enter a number.");
+    return "Error"
   }
   else {
     alert("Your password will be " + characters + " characters long.");
@@ -50,15 +54,16 @@ function generatePassword() {
   }
 
   if (yesLowerCase === false && yesUpperCase === false && yesNumbers === false && yesSpecial === false) {
-    return alert("One character type must be selected to generate password.");
+    alert("One character type must be selected to generate password.");
+    return "Error"
   };
 
-  // group selected characters
+  // Used "if" functon and "concat"
   if (yesUpperCase) {
     possibleChoices = possibleChoices.concat(upperCase);
   }
   if (yesLowerCase) {
-    possibleChoices = possibleChoices.concat(lowerCase);
+    possibleChoices = possibleChoices.concat(lowerCase);}
   if (yesNumbers) {
     possibleChoices = possibleChoices.concat(number);
   }
@@ -66,15 +71,17 @@ function generatePassword() {
     possibleChoices = possibleChoices.concat(special);
   }
 
-  // pick random cards out of new pool for length of password
+  // Loop to generate password based on criteria
   let finalPassword = ""
   for (let i = 0; i < characters; i++) {
     let rng =[Math.floor(Math.random() * possibleChoices.length)];
     finalPassword = finalPassword + possibleChoices[rng];
   }
+  alert ("Click 'OK' to generate password.")
   return finalPassword;
-};}
+ 
 
+}
 // Assignment code
 var generateBtn = document.querySelector("#generate");
 
