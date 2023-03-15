@@ -1,22 +1,8 @@
-# 03 JavaScript: Password Generator
+For this challenge we needed to create a random password generator based on certain criteria. We were given starter code, and had to add code to make it functional. It also needed to fit multiple screen sizes.
 
-## Your Task
+It was complete when the following criteria was met:
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
-
-## User Story
-
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
-
-## Acceptance Criteria
-
-```
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
 THEN I am presented with a series of prompts for password criteria
@@ -33,68 +19,48 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
+The following criteria also needed to be met:
 
-## Mock-Up
+Deployment:
 
-The following image shows the web application's appearance and functionality:
+Application deployed at live URL.
+Application loads with no errors.
+Application GitHub URL submitted.
+GitHub repository that contains application code.
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+Quality:
 
-## Grading Requirements
+Application user experience is intuitive and easy to navigate.
+Application user interface style is clean and polished.
+Application resembles the mock-up functionality provided in the Challenge instructions.
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+Repository Quality:
 
-This Challenge is graded based on the following criteria: 
+Repository has a unique name.
+Repository follows best practices for file structure and naming conventions.
+Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+Repository contains multiple descriptive commit messages.
+Repository contains quality readme file with description, screenshot, and link to deployed application.
 
-### Technical Acceptance Criteria: 40%
+References:
+https://www.w3schools.com/js/js_functions.asp
+https://www.w3schools.com/js/js_string_methods.asp
+https://www.w3schools.com/jsref/jsref_obj_string.asp
+https://www.w3schools.com/js/js_array_methods.asp
+https://stackoverflow.com/questions/59340866/random-password-generator-javascript-not-working
+https://www.w3schools.com/howto/howto_js_password_validation.asp
+https://w3collective.com/random-password-generator-javascript/
+https://www.w3schools.com/jsref/prop_error_message.asp
+https://www.codeproject.com/Questions/744725/Javascript-While-loop-looping-forever
+https://www.youtube.com/watch?v=jZP0AQ4mugo
+https://sebhastian.com/javascript-confirmation-yes-no/
+https://www.youtube.com/watch?v=IN0uhY7tmC4
+https://www.youtube.com/watch?v=nNIr0lF7KnU
+https://stackoverflow.com/questions/783818/how-do-i-create-a-custom-error-in-javascript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+https://sentry.io/answers/difference-between-let-and-var-in-javascript/#:~:text=The%20difference%20between%20let%20and,in%20which%20they're%20declared.
+https://www.w3schools.com/jsref/met_win_prompt.asp
+https://www.w3schools.com/jsref/met_win_confirm.asp
 
-* Satisfies all of the preceding acceptance criteria.
+Deployed website: 
 
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the Challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
